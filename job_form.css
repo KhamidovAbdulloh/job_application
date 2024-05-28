@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 8px;
+    background-color: lightblue;
+}
+
+form {
+    margin: 72px 300px;
+    border: 1px solid black;
+    padding: 20px 60px;
+    background-color: white;
+
+}
+/* Header section */
+ .header{
+ }
+ .header_title {
+    font-size: 2.5rem;
+    margin-top: 2.5rem;
+    color: #33334d
+ }
+ .header_description {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #33334d
+ }
+/* Main section */
+table {
+width: 100%;
+
+}
+ .title_table{
+    margin-top: 1.5rem;
+    padding-bottom: 0.2rem;
+    font-style: italic;
+    color:  #3385ff;
+    font-weight: bold;
+
+ }
+
+ .name_table {
+    font-size: 0.8rem;
+    color: #666699
+
+ }
+ .table_all {
+    display: inline;
+    width: 95%;
+    height: 3em;
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+
+ .table_date {
+    width: 50%;
+    height: 3em;
+    border-radius: 5px;
+    margin-top: 0.2rem
+}
+
+ .info_table {
+    margin-bottom: 1.5rem
+ }
+ .info_1 {
+    margin-top: 1.5rem
+ }
+ .skills_table {
+ margin-bottom: 1rem;
+    border-collapse: collapse;
+}
+ .skills_table th {
+    padding: 5px;
+    border: 1.5px solid gray;
+    border-collapse: none;
+
+}
+.skills_table td {
+    border: 1.5px solid gray;
+    text-align: center;
+}
+ .skills_head th {
+    background-color: #e5eaf4;
+ }
+ .skills_head .non {
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    background-color: white
+ }
+ .eng {
+    padding: 15px 0px;
+ }
+
+ input[type="radio" i] {
+    cursor: pointer;
+    font: inherit;
+    width: 1.15em;
+    height: 1.15em;
+ }
+ .doc {
+    position: relative;
+    width: 100%
+ }
+ .doc_label {
+    margin-top: 1.5rem;
+    padding-bottom: 0.4rem;
+    font-style: italic;
+    color:  #3385ff;
+    font-weight: bold;
+ }
+ .doc_input {
+    width: 100%;
+ }
+ input[type=file] {
+    color: blue;
+    font-style: italic;
+ }
+ input[type=file]::file-selector-button {
+    width: 73%;
+    border: 3px dashed gray;
+    background: #e5eaf4;
+    padding: 20px 20px;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+}
+
+  input[type=file]::file-selector-button:hover {
+    background: #bbbb77;
+    color: white;
+}
+ .letter {
+    margin: 1.5rem 0;
+ }
+ .letter_label {
+    font-style: italic;
+    color:  #3385ff;
+    font-weight: bold;
+ }
+ .letter_textarea {
+    margin-top: 0.5rem;
+    border: 2px solid gray;
+    background: #f0f0f5;
+    font-family: sans-serif;
+    font-style: italic;
+    width: 100%
+ }
+footer {
+    border-top: 1px solid gray;
+    padding-top: 20px;
+    text-align: center;
+}
+ .submit {
+    width: 50%;
+    height: 3rem;
+    background: #6600cc;
+    color: white;
+    font-weight: 900;
+    border: 2px solid #e0b3ff;
+    border-radius: 10px
+ }
+ .submit:hover {
+    cursor: pointer;
+    background: #e0b3ff;
+    border: 2px solid #6600cc;
+    color: black;
+ }

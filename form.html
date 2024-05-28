@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Job form</title>
+  <link href="./job_form.css" rel="stylesheet">
+</head>
+<body>
+  <form>
+    <header id="header" class="header form-all">
+      <h1 class="header_title">Job Application</h1>
+      <p class="header_description">Please complete the form below to apply for a position with us.</p>
+      <hr>
+    </header>
+    <section id="section" class="section">
+      <div class="full_name">
+        <p class="title_table">Full Name</p>
+          <table class="full_name__table">
+            <thead>
+              <tr>
+                <th><input class="table_all" type="text" placeholder="First Name" name="firstname" id="firstname"></th>
+                <th><input class="table_all" type="text" placeholder="Middle Name" name="middlename" id="middlename"></th>
+                <th><input class="table_all" type="text" placeholder="Last Name" name="lastname" id="lastname"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="name_table">
+                <td><label for="firstname">First Name</label></td>
+                <td><label for="middlename">Middle Name</label></td>
+                <td><label for="lastname">Last Name</label></td>
+              </tr>
+            </tbody>
+          </table>
+
+
+      </div>
+
+      <div class="body_size">
+        <p class="title_table">Body Size</p>
+
+          <table class="body_size__table">
+            <thead>
+              <tr>
+                <th><input class="table_all" type="number" placeholder="sm" name="height" id="height"></th>
+                <th><input class="table_all" type="number" placeholder="kg" name="weight" id="weight"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="name_table">
+                <td><label for="height">Height</label></td>
+                <td><label for="weight">Weight</label></td>
+              </tr>
+            </tbody>
+          </table>
+
+
+      </div>
+
+      <div class="birth_day">
+        <p class="title_table">Birth Date</p>
+
+          <input class="table_date" type="date" name="birth" id="birth">
+        <div><label class="name_table" for="birth">Day Month Year</label></div>
+
+      </div>
+
+      <div class="family_status">
+
+          <p class="title_table">Family Status</p>
+
+          <input class="family_status__input" type="radio" name="Fstatus" id="divorced">
+          <label class="family_status__label" for="divorced">Divorced</label><br>
+          <input class="family_status__input" type="radio" name="Fstatus" id="married">
+          <label class="family_status__label" for="married">Married</label><br>
+          <input class="family_status__input" type="radio" name="Fstatus" id="single">
+          <label class="family_status__label" for="single">Single</label><br>
+          <input class="family_status__input" type="radio" name="Fstatus" id="other" value="other" aria-label="Other">
+          <label class="family_status__label" for="other">Other</label><br>
+          <input class="family_status__input" type="text" name="Fstatus[other]" data-otherhint="Other" size="15" id="input" data-placeholder="Please type another option here" placeholder="Please type another option here">
+
+        <div class="address">
+          <p class="title_table">Current Address</p>
+          <input class="address_input table_all" type="text" name="streetaddress" id="streetaddress">
+          <label class="name_table" for="streetaddress">Street Address</label>
+          <input class="address_input table_all" type="text" name="streetaddressline2" id="streetaddressline2">
+          <label class="name_table" for="streetaddressline2">Street Address Line 2</label>
+
+          <table>
+            <thead>
+              <tr>
+                <th><input class="address_input table_all" type="text" name="city" id="city"></th>
+                <th><input class="address_input table_all" type="text" name="state" id="state"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><label class="name_table" for="city">City</label></td>
+                <td><label class="name_table" for="state">State / Province</label></td>
+              </tr>
+            </tbody>
+          </table>
+          <input class="address_input table_all" type="text" name="postal" id="postal">
+          <label class="name_table" for="postal">Postal / Zip Code</label>
+        </div>
+
+      </div>
+      <div class="info_1">
+        <table class="info_table">
+            <thead>
+              <tr>
+                <th class="title_table">Email Address<br><input class="info_email__input table_all" type="email" name="email" id="email" placeholder="ex: myname@example.com"></th>
+                <th class="title_table">Phone Number<br><input class="info_tel__input table_all" type="tel" name="phone" id="phone" placeholder=" 90 8554545"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="name_table">
+                <td><label class="info_email__label" for="email">example@example.com</label></td>
+                <td><label class="info_tel__label" for="phone">Code Phone Number</label></td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+
+      <div class="info">
+        <table class="info_table">
+            <thead>
+              <tr>
+                <th class="title_table">LinkedIn<input class="info_linkedin__input table_all" type="url" name="linkedin" id="linkedin"></th>
+                <th class="title_table">Experience<input class="info_experience__input table_all" type="number" name="experience" id="experience"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="name_table">
+                <td><label class="info_linkedin__label" for="linkedin">LinkedIn</label></td>
+                <td><label class="info_experience__label" for="experience">Experience</label></td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+      <hr>
+      <div class="info">
+        <table class="info_table">
+            <thead>
+              <tr>
+                <th><label class="title_table" for="position">Position Applied</label></th>
+                <th><label class="title_table" for="aboutus">How did you hear about us</label></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><select class="info_position table_all" name="position" id="position">
+                    <option>Please Select</option>
+                    <option value="Marketing Specialist">Marketing Specialist</option>
+                    <option value="Sales Manager">Sales Manager</option>
+                    <option value="Product Lead">Product Lead</option>
+                    <option value="Developer">Developer</option>
+                    </select></td>
+                <td><select class="info_aboutus table_all" name="aboutus" id="aboutus">
+                    <option>Please Select</option>
+                    <option value="LinkedIn">LinkedIn</option>
+                    <option value="Event">Event</option>
+                    <option value="Social Media">Social Media</option>
+                    <option value="Company Website">Company Website</option>
+                    <option value="Family Friend">Family / Friend</option>
+                    <option value="Other">Other</option>
+                    </select>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+      <div class="date">
+        <div><label class="title_table" for="date">Available Start Date</label></div>
+        <input class="table_date" type="date" name="date" id="date">
+      </div>
+      </div>
+
+      <div class="skills">
+          <p class="title_table">Computer Skills</p>
+        <table class="skills_table">
+            <thead  class="skills_head">
+              <tr>
+                <th class="non">&nbsp;</th>
+                <th>Beginner</th>
+                <th>Elementary</th>
+                <th>Advanced</th>
+                <th>Expert</th>
+              </tr>
+              <tr>
+                <th><label id="excel">Excel</label></th>
+                <td><input type="radio" name="excel" id="excel1"></td>
+                <td><input type="radio" name="excel" id="excel2"></td>
+                <td><input type="radio" name="excel" id="excel3"></td>
+                <td><input type="radio" name="excel" id="excel4"></td>
+              </tr>
+              <tr>
+                <th><label id="word">Word</label></th>
+                <td><input type="radio" name="word" id="word1"></td>
+                <td><input type="radio" name="word" id="word2"></td>
+                <td><input type="radio" name="word" id="word3"></td>
+                <td><input type="radio" name="word" id="word4"></td>
+              </tr>
+              <tr>
+                <th><label id="1C">1C</label></th>
+                <td><input type="radio" name="1C" id="1C1"></td>
+                <td><input type="radio" name="1C" id="1C2"></td>
+                <td><input type="radio" name="1C" id="1C3"></td>
+                <td><input type="radio" name="1C" id="1C4"></td>
+              </tr>
+              <tr>
+                <th><label id="Plang">Programming Language</label></th>
+                <td><input type="radio" name="Plang" id="Plang1"></td>
+                <td><input type="radio" name="Plang" id="Plang2"></td>
+                <td><input type="radio" name="Plang" id="Plang3"></td>
+                <td><input type="radio" name="Plang" id="Plang4"></td>
+              </tr>
+            </thead>
+          </table>
+      </div>
+
+      <div class="english">
+        <div class="eng"><label class="title_table" id="english">Ability knowing English Language</label></div>
+        <input class="english_input" type="radio" name="english" id="english1">
+        <input class="english_input" type="radio" name="english" id="english2">
+        <input class="english_input" type="radio" name="english" id="english3">
+        <input class="english_input" type="radio" name="english" id="english4">
+        <input class="english_input" type="radio" name="english" id="english5">
+        <div><pre>Worst         Best</pre></div>
+      </div>
+
+      <div class="doc">
+        <div class="doc_label"><label for="doc">Applicant Document(Diploma, Certificate)</label></div>
+        <input class="doc_input" type="file" name="doc" id="doc">
+      </div>
+      <div class="resume">
+        <div class="doc_label"><label for="resume">Upload Your Resume</label></div>
+        <input class="doc_input" type="file" name="resume" id="resume">
+      </div>
+      <div class="letter">
+        <label class="letter_label" for="text">Cover Letter</label>
+        <textarea class="letter_textarea" id="text" name="text" rows="10"></textarea>
+      </div>
+
+    </section>
+      <footer>
+        <div id="apply">
+          <button class="submit" type="submit">Apply</button>
+        </div>
+      </footer>
+
+  </form>
+</body>
+</html>
